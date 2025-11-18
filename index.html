@@ -208,6 +208,53 @@ section.show{
   text-align:center;
   position:relative;
 }
+/* MOBILE RESPONSIVE FIXES */
+/* FIX CONTACT ME TEXT ISSUE ON SMALL MOBILE */
+@media (max-width: 450px) {
+
+  .contact-wrapper {
+    padding: 28px 18px;
+    border-radius: 20px;
+    max-width: 95%;
+  }
+
+  .contact-wrapper h3 {
+    font-size: 32px !important;
+    line-height: 36px;
+    margin-bottom: 12px;
+    word-break: break-word;
+    text-align: center;
+  }
+
+  .contact-line {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 6px 0;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .contact-line span {
+    font-size: 17px;
+    display: block;
+    margin-top: 4px;
+    word-break: break-word;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .social-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    text-align: center;
+  }
+}
+
 
 .contact-wrapper{
   max-width:650px;
@@ -221,13 +268,19 @@ section.show{
   animation:fadeUp 1.2s ease forwards;
   opacity:0;
 }
+.contact-wrapper p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
 
 @keyframes fadeUp{
   0%{opacity:0;transform:translateY(40px);} 
   100%{opacity:1;transform:translateY(0);} 
 }
 
-.contact h2{
+.contact h3{
   font-size:48px;
   margin-bottom:25px;
   background:linear-gradient(90deg, var(--accent), var(--accent2));
@@ -327,7 +380,7 @@ section.show{
 
 <section id="contact" class="contact">
   <div class="contact-wrapper">
-    <h2>Contact Me</h2>
+    <h3>Contact Me</h3>
     <p class="contact-line">Email: <span>roshaanrehmani361@gmail.com</span></p>
     <p class="contact-line">Phone: <span>+923079902386</span></p>
 
